@@ -105,7 +105,7 @@ int main()
     queue_list *queue;
     char *data;
 
-    queue = (queue_list *)malloc(sizeof(queue));
+    queue = (queue_list *)malloc(sizeof(queue_list));
     queue_init(queue);
 
     queue_insert(queue, "hello");

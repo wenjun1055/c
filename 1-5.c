@@ -9,7 +9,7 @@ int main()
     char buf[MAXLINE];
     pid_t pid;
     int status;
-
+    //just test 
     printf("%% ");
     while (fgets(buf, MAXLINE, stdin) != NULL) {
         if (buf[strlen(buf) - 1] == '\n')

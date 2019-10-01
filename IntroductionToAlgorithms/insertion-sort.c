@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main()
+void main()
 {
     int i;
     int a[6]={31, 41, 59, 26, 41, 58};
@@ -26,5 +26,4 @@ int main()
         printf("%d\t", a[i]);
     }
     printf("\n");
-    return 0;
 }

@@ -73,7 +73,7 @@ static void pr_mask(const char *str)
         exit(-1);
     }
 
-    printf("%s", str);
+    printf("\n%s", str);
 
     if (sigismember(&sigset, SIGINT)) printf("SIGINT ");
     if (sigismember(&sigset, SIGQUIT)) printf("SIGQUIT ");

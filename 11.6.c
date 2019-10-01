@@ -39,7 +39,7 @@ int main(){
     qsort(array, n_values, sizeof(int), compare_integers);
 
     for (i = 0; i < n_values; i++) {
-        printf("%d\n", array[i]);
+        printf("...%d...\n", array[i]);
     }
 
     free(array);

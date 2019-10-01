@@ -26,7 +26,7 @@ int main(void)
 
     for (; ;) {
         if (NULL == (ptr = getpwnam("vagrant"))) {
-            printf("getpwnam error\n");
+            printf("!!! getpwnam error !!!\n");
             exit(-1);
         }
 

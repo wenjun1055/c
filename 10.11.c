@@ -6,17 +6,17 @@ static void sig_quit(int);
 
 int main(void)
 {
-    sigset_t    newmask, oldmask, pendmask;
+    sigset_t    newmas, oldmask, pendmask;
 
     if (signal(SIGQUIT, sig_quit) == SIG_ERR) {
         printf("can't catch SIGQUIT\n");
         exit(-1);
     }
 
-    sigemptyset(&newmask);
-    sigaddset(&newmask, SIGQUIT);
+    sigemptyset(&newmas);
+    sigaddset(&newmas, SIGQUIT);
 
-    if (sigprocmask(SIG_BLOCK, &newmask, &oldmask) < 0) {
+    if (sigprocmask(SIG_BLOCK, &newmas, &oldmask) < 0) {
         printf("SIG_BLOCK error\n");
         exit(-1);
     }

@@ -12,7 +12,7 @@ int main(int argc, char **argv)
         printf("%s: ", *(argv + i));
 
         if (lstat(*(argv + i), &buf) < 0) {
-            printf("lstat error\n");
+            printf("...lstat error...\n");
             continue;
         }
 

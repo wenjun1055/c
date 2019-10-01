@@ -7,7 +7,7 @@ static void sig_usr(int);
 int main(void)
 {
     if (signal(SIGUSR1, sig_usr) == SIG_ERR) {
-        printf("can't catch SIGUSR1");
+        printf("...can't catch SIGUSR1...");
         exit(-1);
     }
 

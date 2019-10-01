@@ -25,7 +25,7 @@ int main(void)
     }
 
     if (n < 0) {
-        printf("read error\n");
+        printf("...read error...\n");
         exit(-1);
     }
 

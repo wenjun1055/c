@@ -2,15 +2,16 @@
 
 int main()
 {
-    int i;
-    int a[6]={31, 41, 59, 26, 41, 58};
-    for(i = 0; i < 6; i++) {
-        printf("%d\t",a[i]);
+    int i,n;
+    printf("Enter the Number of Elements\n");
+    scanf("%d",&n);
+    for(i = 0; i < n; i++) {
+        scanf("%d",a[i]);
     }
     printf("\n");
 
     int key, j = 0;
-    for(j = 1; j < 6; j++) {
+    for(j = 1; j < n; j++) {
         key = a[j];
         i = j - 1;
 
@@ -22,7 +23,7 @@ int main()
     }
 
     printf("Sort Complete!\n");
-    for(i = 0; i < 6; i++) {
+    for(i = 0; i < n; i++) {
         printf("%d\t", a[i]);
     }
     printf("\n");

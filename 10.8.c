@@ -9,7 +9,7 @@ static jmp_buf  env_alrm;
 
 int main(void)
 {
-    int     n;
+    int     s;
     char    line[100];
 
     if (signal(SIGALRM, sig_alrm) == SIG_ERR) {
@@ -23,12 +23,12 @@ int main(void)
     }
 
     alarm(10);
-    if ((n = read(STDIN_FILENO, line, 100)) < 0) {
+    if ((s = read(STDIN_FILENO, line, 100)) < 0) {
         printf("read error\n");
     }
     alarm(0);
 
-    write(STDOUT_FILENO, line, n);
+    write(STDOUT_FILENO, line, s);
 
     return 0;
 }

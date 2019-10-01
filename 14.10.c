@@ -7,7 +7,7 @@
 
 int main(void)
 {
-    int             n, flag;
+    int             s, flag;
     char            ctlbuf[BUFFSIZE], datbuf[BUFFSIZE];
     struct strbuf   ctl, dat;
 
@@ -18,7 +18,7 @@ int main(void)
 
     for ( ; ;) {
         flag = 0;
-        if ((n = getmsg(STDIN_FILENO, &ctl, &dat, &flag)) < 0) {
+        if ((s = getmsg(STDIN_FILENO, &ctl, &dat, &flag)) < 0) {
             printf("getmsg error\n");
             exit(-1);
         }

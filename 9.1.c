@@ -8,7 +8,7 @@ int main()
     char string[50], *ap;
     printf("Please input a string:");
     gets(string);
-    printf("Your input string is:%s\r\n\r\n", string);
+    printf("...Your input string is:%s...\r\n\r\n", string);
 
     for (ap = string; *ap != '\0'; ap++) {
         if (iscntrl(*ap) != 0) {

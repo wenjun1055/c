@@ -12,7 +12,7 @@ static volatile sig_atomic_t    canjmp;
 int main(void)
 {
     if (signal(SIGUSR1, sig_usr1) == SIG_ERR) {
-        printf("signal(SIGUSR1) error\n");
+        printf("...signal(SIGUSR1) error...\n");
         exit(-1);
     }
 

@@ -1,6 +1,6 @@
 #include "stack.h"
 
-int stack_init(stack_info *stack)
+int stack_init(stack_info *stack)// this is return type
 {
     stack->top = 0;
     stack->max = 0
